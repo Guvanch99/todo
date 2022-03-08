@@ -1,0 +1,74 @@
+.list{
+    margin-top: 27px;
+}
+
+.item{
+    margin-top: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 370px;
+}
+
+.item:hover{
+    background: #FFFFFF;
+    box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 9px 0 9px 10px;
+    margin-left: -10px;
+}
+
+.item:hover > .removeImg{
+    display: block;
+}
+
+
+.emptyCircle{
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid #CBCBCB;
+}
+
+.text{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #4E4E4E;
+    width: 244px;
+    margin-left: 16px;
+    margin-right: 60px;
+}
+
+.removeImg{
+  display: none;
+}
+
+.container{
+    cursor: pointer;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.imgAdd{
+    width: 12px;
+    height: 12px;
+    object-fit: cover;
+}
+
+.addText{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #3D82EB;
+    margin-left: 16px;
+}
+
+

@@ -1,0 +1,42 @@
+
+.container{
+    position: relative;
+}
+
+.iconWrapper{
+    cursor: pointer;
+    padding: 0 7px;
+}
+
+.iconWrapperActive{
+    cursor: pointer;
+    background: #FFFFFF;
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 5px 5px 0 0;
+    padding: 0 7px;
+
+}
+
+.statusContainer{
+    position: absolute;
+    top: 100%;
+    right: -0%;
+    background: #FFFFFF;
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 5px 0 5px 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    width: 65px;
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 9px;
+    text-align: center;
+    padding: 7px 9px;
+    color: #3D82EB;
+    border-bottom:1px solid #ECECEC;
+}

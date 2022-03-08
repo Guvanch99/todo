@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.dateMonth{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5px;
+    line-height: 6px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: #3D82EB;
+    border: 1px solid #3D82EB;
+    height: 5px;
+    border-radius: 2px 2px 0 0;
+}
+.dateDay{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 7px;
+    line-height: 8px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: 1px solid #3D82EB;
+    box-sizing: border-box;
+    border-radius: 0 0 3px 3px;
+    color: #3D82EB;
+    width: 17px;
+}
+
+.text{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #323232;
+    margin-left: 13px;
+}

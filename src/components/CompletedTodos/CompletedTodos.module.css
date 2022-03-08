@@ -1,0 +1,22 @@
+.list{
+    margin-top: 27px;
+}
+
+.item{
+    margin-top: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 370px;
+}
+
+.text{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    text-decoration-line: line-through;
+    color: #4E4E4E;
+    margin-left: 16px;
+}
