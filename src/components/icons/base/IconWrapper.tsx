@@ -20,7 +20,7 @@ export const IconWrapper: FC<TIconWrapperProps> = ({
 
   return (
     <span
-      className={S.WrapperIcon}
+      className={S.wrapperIcon}
       role="img"
       onClick={onClick}
     >
