@@ -40,3 +40,17 @@
     color: #3D82EB;
     border-bottom:1px solid #ECECEC;
 }
+
+.disabled{
+    width: 65px;
+    padding: 7px 9px;
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 9px;
+    text-align: center;
+    color: #C4C4C4;
+    border-bottom:1px solid #ECECEC;
+
+}
