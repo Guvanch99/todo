@@ -1,6 +1,6 @@
-import S from './Date.module.css'
+import S from './CustomDate.module.css'
 
-const CurrentDate=()=> {
+const CustomDate=()=> {
   const date=new Date()
   const day= date.getDate()
   const month=date.getMonth()
@@ -15,4 +15,4 @@ const CurrentDate=()=> {
   </div>
  )
 }
-export default CurrentDate
+export default CustomDate
