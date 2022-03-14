@@ -1,18 +1,19 @@
 import S from './CompletedTodos.module.css'
-import {FAKETODOS} from "../Todos/FakeData";
 import CheckImg from '../../assets/check.png'
+import {useTodos} from "../../hook/useTodos";
 
-const CompletedTodos=()=>(
-  <ul className={S.list}>
+const CompletedTodos=()=> {
+  const {filteredTodos}=useTodos()
+ return <ul className={S.list}>
     {
-      FAKETODOS.map(({id,status,todo})=>(
+      filteredTodos('COMPLETED').map(({id, todo}) => (
         <li className={S.item} key={id}>
-          <img className={S.img} src={CheckImg}/>
-          <del className={S.text}>{todo}</del>
+          <img className={S.img} src={CheckImg} alt={'check'}/>
+          <p className={S.text}>{todo}</p>
         </li>
       ))
     }
   </ul>
-)
+}
 
 export default CompletedTodos
