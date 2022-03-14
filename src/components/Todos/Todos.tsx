@@ -1,21 +1,35 @@
 import S from './Todos.module.css'
-import {FAKETODOS} from "./FakeData";
 import RemoveImg from '../../assets/remove.png'
 import AddImg from '../../assets/plus.png'
 import {useState} from "react";
 import Modal from "../Modal/Modal";
+import {useTodos} from "../../hook/useTodos";
 
 const Todos=()=>{
   const [isModal, setModal]=useState<boolean>(false)
-return(
+  const {todos,setTodos}=useTodos()
+  const inProgressTodo=todos.filter((todo:any)=>todo.status==='progress')
+
+  const handleAction=(id:number,status:'COMPLETED'|'IN_PROGRESS')=>{
+  const result= todos.map((todo:any)=>{
+     if(todo.id===id){
+       return {...todo,status}
+     }
+     return todo
+   })
+  setTodos(result)
+}
+
+  return(
   <>
   <ul className={S.list}>
     {
-      FAKETODOS.map(({id,status,todo})=>(
+      // @ts-ignore
+      inProgressTodo.map(({id,todo})=>(
        <li className={S.item} key={id}>
-         <div className={S.emptyCircle}/>
+         <div className={S.emptyCircle} onClick={()=>handleAction(id,'COMPLETED')}/>
          <p className={S.text}>{todo}</p>
-           <img className={S.removeImg} src={RemoveImg} alt='remove img'/>
+           <img onClick={()=>handleAction(id,'IN_PROGRESS')} className={S.removeImg} src={RemoveImg} alt='remove img'/>
        </li>
       ))
     }

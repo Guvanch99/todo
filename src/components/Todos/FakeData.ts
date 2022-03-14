@@ -4,7 +4,7 @@ type TFakeTodos={
   todo:string
 }
 
-export const FAKETODOS:TFakeTodos[]=[
+export const FAKETODOS:any[]=[
   {
     id:1,
     status:false,
@@ -26,7 +26,6 @@ export const FAKETODOS:TFakeTodos[]=[
     todo:'Clean the house and backyard'
   },
   {
-    id:5,
     status:false,
     todo:'Take the car to the autoshop for an oil change'
   }
