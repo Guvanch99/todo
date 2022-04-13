@@ -8,16 +8,15 @@ import {useTodos} from "../../hook/useTodos";
 const Todos=()=>{
   const [isModal, setModal]=useState<boolean>(false)
   const {handleAction,filteredTodos}=useTodos()
-
   return(
   <>
   <ul className={S.list}>
     {
-      filteredTodos('IN_PROGRESS').map(({id,todo})=>(
-       <li className={S.item} key={id}>
-         <div className={S.emptyCircle} onClick={()=>handleAction(id,'COMPLETED')}/>
-         <p className={S.text}>{todo}</p>
-           <img onClick={()=>handleAction(id,'REMOVED')} className={S.removeImg} src={RemoveImg} alt='remove img'/>
+      filteredTodos('IN_PROGRESS').map((item:any)=>(
+       <li className={S.item} key={item.id}>
+         <div className={S.emptyCircle} onClick={()=>handleAction(item.id,'COMPLETED')}/>
+         <p className={S.text}>{item.info}</p>
+           <img onClick={()=>handleAction(item.id,'REMOVED')} className={S.removeImg} src={RemoveImg} alt='remove img'/>
        </li>
       ))
     }

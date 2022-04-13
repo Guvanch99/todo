@@ -1,5 +1,5 @@
 export type TTodo={
-  id:number
-  status:'REMOVED'|'IN_PROGRESS'|'COMPLETED'
-  todo:string
+  id: number
+  type: 'REMOVED' | 'IN_PROGRESS' | 'COMPLETED'
+  info: string
 }

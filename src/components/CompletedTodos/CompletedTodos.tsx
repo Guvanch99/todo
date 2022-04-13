@@ -6,10 +6,10 @@ const CompletedTodos=()=> {
   const {filteredTodos}=useTodos()
  return <ul className={S.list}>
     {
-      filteredTodos('COMPLETED').map(({id, todo}) => (
-        <li className={S.item} key={id}>
+      filteredTodos('COMPLETED').map((item:any) => (
+        <li className={S.item} key={item.id}>
           <img className={S.img} src={CheckImg} alt={'check'}/>
-          <p className={S.text}>{todo}</p>
+          <p className={S.text}>{item.info}</p>
         </li>
       ))
     }

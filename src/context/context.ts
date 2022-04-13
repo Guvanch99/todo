@@ -3,9 +3,10 @@ import {TTodo} from "../types";
 
 type TCreateContext={
   todos: TTodo[]
-  handleAction: (id:number, status:'COMPLETED'|'REMOVED') => void,
-  filteredTodos: (status: 'REMOVED'|'IN_PROGRESS'|'COMPLETED') => TTodo[]
-  createTodo: (newTodo:string)=> void
+  filteredTodos: (status: 'REMOVED'|'IN_PROGRESS'|'COMPLETED') => any
+  createTodo: (newTodo:string) => void,
+  todoId?: number,
+  handleAction:(taskId:number, type:'REMOVED'|'IN_PROGRESS'|'COMPLETED')=>void
 }
 
 const TodosContext = createContext({} as TCreateContext)

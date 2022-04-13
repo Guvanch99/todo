@@ -6,9 +6,9 @@ const RemovedTodos=()=>{
   return(
 <ul className={S.list}>
     {
-      filteredTodos('REMOVED').map(({id, todo}) => (
-        <li className={S.item} key={id}>
-          <p className={S.text}>{todo}</p>
+      filteredTodos('REMOVED').map((item:any) => (
+        <li className={S.item} key={item.id}>
+          <p className={S.text}>{item.info}</p>
         </li>
       ))
     }
